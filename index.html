@@ -11,7 +11,11 @@
 <body>
     
     <div class="wrapper">
-        <p class="info"><i class="fas fa-question"></i></p>
+        <div class="info-container">
+            <p class="brush"><i class="fas fa-paint-brush"></i></p>
+            <p class="info"><i class="fas fa-question"></i></p>
+        </div>
+       
         <h1>Stoper</h1>
         <p class="stopwatch">0:00</p>
         <p class="time">0:00</p>
@@ -37,7 +41,12 @@
 
 
         </ul>
-        
+        <div class="color-panel hidden">
+            <div class="colorBtn orange"></div>
+            <div class="colorBtn blue"></div>
+            <div class="colorBtn green"></div>
+    
+        </div>
     </div>
 
     <div class="modal-shadow">
@@ -52,6 +61,8 @@
 
         </div>
     </div>
+
+
 <script src="main.js"></script>
 </body>
 </html>
