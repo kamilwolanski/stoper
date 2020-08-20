@@ -239,6 +239,9 @@ strong{
     .time-list li{
         width: initial;
     }
+    .modal{
+        width: 500px;
+    }
 }
 @media(max-width:600px){
     body{
@@ -256,8 +259,9 @@ strong{
     .time-list li{
         width: initial;
     }
+    
 }
-@media(max-width:370px){
+@media(max-width:376px){
     .buttons{
         margin:0;
     }
@@ -271,5 +275,12 @@ strong{
     }
     .time-list li{
         width: initial;
+    }
+    .modal{
+        width: initial;
+        height: initial;
+    }
+    .color-panel{
+        width: 50px;
     }
 }
