@@ -23,6 +23,9 @@ const greenColor = document.querySelector('.green');
 const brush = document.querySelector('.brush');
 
 const modalShadow = document.querySelector('.modal-shadow');
+const colorPanel = document.querySelector('.color-panel');
+
+const wrapper = document.querySelector('.wrapper')
 
 let mseconds = 0;
 let seconds = 0;
@@ -137,7 +140,7 @@ const changeColorToGreen = (e)=>{
 }
 
 const showPanel = ()=>{
-    document.querySelector('.color-panel').classList.toggle('hidden');
+    colorPanel.classList.toggle('hidden');
 }
 
 pauzaBtn.addEventListener('click', stopCount);
@@ -154,5 +157,9 @@ window.addEventListener('click', e=> {
     if(e.target === modalShadow){
         document.querySelector('.modal-shadow').style.display = "none";
     }
-})
+    else if(e.target === wrapper && e.target !== brush){
+        colorPanel.classList.add('hidden');
+        console.log("dupa")
+}})
+
 
